@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yajur Sharma</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header>
+
+        <ul>
+            <li>
+              <a href="index1.html">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+      
+          <script type="text/javascript">
+      
+            window.addEventListener("scroll", function () {
+      
+              var header = document.querySelector("header");
+      
+              header.classList.toggle("sticky", window.scrollY > 0);
+      
+            });
+      
+          </script>
+      
+
+    </header>
+
+    <section class="banner">
+        <p class="txt float effect">Hi, I'm <span class="dynamic-txt"></span></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElement = document.querySelector(".txt");
+
+            textElement.addEventListener("animationend", function () {
+                var typed = new Typed(".dynamic-txt", {
+                    strings: ["Yajur.", "a Programmer.", "a Web Developer."],
+                    typeSpeed: 180,
+                    backSpeed: 80,
+                    loop: true
+                });
+            });
+        });
+    </script>
+
+    <section id="about">
+        <h2>All About Me</h2>
+        <p class="about-me">
+            Hi, I'm Yajur, a 17-year-old self-taught developer with a passion for building creative things on the web and in real life.
+            I've been tinkering around for 5 years now, crafting sleek yet simple user interfaces, working on backend development, 
+            and overall just coding projects.  
+        </p>
+        <p class="about-me">
+            I believe bringing ideas to life through code is the best use of it, and whether it's web development, scripting, or 
+            just a fun side project, I'm always up for a challenge. You can check out my work on my GitHub page. When I'm not coding, you'll probably find me working on personal 
+            projects or just enjoying a good cup of coffee. :)
+        </p>
+    </section>
+
+    <div id="preloader">
+        <img src="img/loading.gif" alt="Loading..">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Find me on Social Media</h3>
+            <p>So, let me guess? You wanted to view my projects and source code, see my posts, or just say Hi.  
+                Well, below are my social handles where you can do so :)</p>
+            <ul class="socials">
+                <li><a href="https://x.com/yajurrsharma"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/yajurrrsharma"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/yajurrsharma"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2022 Yajur Sharma. Designed with 💖 and Lots of ☕ by <span>Yajur</span></p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            preloader.classList.add("hidden");
+            setTimeout(() => preloader.style.display = "none", 500);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Contact me</title>
+
+</head>
+
+<body onload="myFunction()">
+
+  <header>
+
+    <ul>
+      <li>
+        <a href="index1.html">Home</a>
+      </li>
+      <li>
+        <a href="index1.html#about">About</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+
+    <script type="text/javascript">
+
+      window.addEventListener("scroll", function () {
+
+        var header = document.querySelector("header");
+
+        header.classList.toggle("sticky", window.scrollY > 0);
+
+      });
+
+    </script>
+
+  </header>
+
+  <section>
+    <h1 class="contact-h1">You can contact me by filling this form!</h1>
+    <div class="contact-container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact Me</h2>
+          <form action="https://formsubmit.co/contact.developeryajur@gmail.com" method="POST">
+            <div class="row">
+              <div class="col-75">
+                <input type="text" class="field" placeholder="Name" name="name" required style="width: 250px" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-75">
+                <input type="email" class="field" placeholder="Email" name="email" required style="width: 250px" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-75">
+                <textarea class="field area" placeholder="Message" name="message" required
+                  style="width: 250px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-contact">
+
+    <div class="footer-content">
+
+      <h3>Find me on Social Media</h3>
+
+      <p>
+
+        So, let me guess? You wanted to view my projects and source code, See
+
+        my posts or just say Hi. Don't worry, I got you! Below are my socials
+
+        handles where you can do all this stuff!
+
+      </p>
+
+      <ul class="socials">
+
+        <li>
+
+          <a href="https://x.com/yajurrsharma"><i class="fa fa-twitter"></i></a>
+
+        </li>
+
+        <li>
+
+          <a href="https://www.instagram.com/yajurrrsharma/"><i class="fa fa-instagram"></i></a>
+
+        </li>
+
+        <li>
+
+          <a href="https://github.com/yajurrsharma"><i class="fa fa-github"></i></a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+
+        Copyright &copy; 2022 Yajur Sharma. Designed with 💖 and Lots of ☕ by
+
+        <span>Yajur</span>
+
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script>
+    window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.classList.add("hidden");
+        setTimeout(() => preloader.style.display = "none", 500);
+    });
+</script>
+
+</body>
+
+</html>
