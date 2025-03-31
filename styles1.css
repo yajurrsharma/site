@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
     color: #000;
     opacity: 0;
     transform: translateY(100px);
-    animation: floatIn 1.75s ease-out forwards;
+    animation: floatIn 2s ease-out forwards;
 }
 
 @keyframes floatIn {
