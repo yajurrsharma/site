@@ -93,19 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
         projects: `
 <div class="cmd-output">
   <div class="term-card">
-    <p class="term-card-title">01. RP2040 Standalone OLED Macropad</p>
-    <p>Custom KiCad PCB layout, dynamic OLED display, hardware matrix debouncing, and custom firmware.</p>
-    <p><a href="https://github.com" target="_blank" class="term-link">[View Schematic & Code]</a></p>
+    <p class="term-card-title">01. Standalone Keyboard</p>
+    <p>Custom KiCad PCB layout, hardware matrix debouncing, and custom firmware.</p>
+    <p><a href="https://github.com/yajurrsharma/bitshift" target="_blank" class="term-link">[View Schematic & Code]</a></p>
   </div>
   <div class="term-card">
-    <p class="term-card-title">02. lorem ipsum dolor sit</p>
-    <p>Deep Learning text-classification pipeline forecasting audience scores using plot embeddings.</p>
-    <p><a href="https://github.com" target="_blank" class="term-link">[View Model Repository]</a></p>
+    <p class="term-card-title">EpicShelter</p>
+    <p>EpicShelter is a lightweight, high-performance CLI backup engine built on FastCDC.</p>
+    <p><a href="https://github.com/yajurrsharma/epic-shelter" class="term-link">[View Model Repository]</a></p>
   </div>
   <div class="term-card">
     <p class="term-card-title">03. Spotify Metadata & Extractor Tool</p>
     <p>Python desktop application for metadata scraping, album art injection, and automated audio fetching.</p>
-    <p><a href="https://github.com" target="_blank" class="term-link">[View Source Code]</a></p>
+    <p><a href="https://github.com/yajurrsharma/" target="_blank" class="term-link">[View Source Code]</a></p>
   </div>
 </div>`,
 
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         contact: `
 <div class="cmd-output">
-  <p>• <b>GitHub:</b> <a href="https://github.com/yajurrsharma" target="_blank" class="term-link">github.com</a></p>
+  <p>• <b>GitHub:</b> <a href="https://github.com/yajurrsharma" class="term-link">github.com</a></p>
   <p>• <b>Email:</b> <a href="mailto:yajursharma@gmail.com" class="term-link">yajursharma@gmail.com</a></p>
 </div>`
     };
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
             username = fullCmd !== "" ? fullCmd.toLowerCase().replace(/\s+/g, "") : "guest";
             isWaitingForName = false;
 
-            promptUser.innerText = `${username}@webterminal`;
+            promptUser.innerText = `${username}@terminal`;
 
             const welcomeNode = document.createElement("div");
             welcomeNode.className = "history-block";
