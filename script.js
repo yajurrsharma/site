@@ -95,17 +95,17 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="term-card">
     <p class="term-card-title">01. Standalone Keyboard</p>
     <p>Custom KiCad PCB layout, hardware matrix debouncing, and custom firmware.</p>
-    <p><a href="https://github.com/yajurrsharma/bitshift" target="_blank" class="term-link">[View Schematic & Code]</a></p>
+    <p><a href="https://github.com/yajurrsharma/bitshift" target="_blank" class="term-link">[View Repo]</a></p>
   </div>
   <div class="term-card">
     <p class="term-card-title">EpicShelter</p>
     <p>EpicShelter is a lightweight, high-performance CLI backup engine built on FastCDC.</p>
-    <p><a href="https://github.com/yajurrsharma/epic-shelter" class="term-link">[View Model Repository]</a></p>
+    <p><a href="https://github.com/yajurrsharma/epic-shelter" class="term-link">[View Repo]</a></p>
   </div>
   <div class="term-card">
     <p class="term-card-title">03. Spotify Metadata & Extractor Tool</p>
     <p>Python desktop application for metadata scraping, album art injection, and automated audio fetching.</p>
-    <p><a href="https://github.com/yajurrsharma/" target="_blank" class="term-link">[View Source Code]</a></p>
+    <p><a href="https://github.com/yajurrsharma/" target="_blank" class="term-link">[View Repo]</a></p>
   </div>
 </div>`,
 
