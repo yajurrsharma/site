@@ -36,49 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     preloader.style.display = "none";
                     terminal.classList.remove("hidden");
-                    startTypewriterIntro();
+                    startIntro();
                 }, 400);
             }, 200);
         }
     }, 220);
 
-    const asciiLines = [
-    " _______  _______ _________ _______  _______           _______  _    _________ _______  _______ ",
-    "(  ____ \\(  ____ )\\__   __/(  ____ \\(  ____ \\|\\     /|(  ____ \\( \\   \\__   __/(  ____ \\(  ____ )",
-    "| (    \\/| (    )|   ) (   | (    \\/| (    \\/| )   ( || (    \\/| (      ) (   | (    \\/| (    )|",
-    "| (__    | (____)|   | |   | |      | (_____ | (___) || (__    | |      | |   | (__    | (____)|",
-    "|  __)   |  _____)   | |   | |      (_____  )|  ___  ||  __)   | |      | |   |  __)   |  ___  )",
-    "| (      | (         | |   | |            ) || (   ) || (      | |      | |   | (      | (   ) |",
-    "| (____/\\| )      ___) (___| (____/\\/\\____) || )   ( || (____/\\| (____/\\| |   | (____/\\| )   ( |",
-    "(_______/|/       \\_______/(_______/\\_______)|/     \\|(_______/(_______/)_(   (_______/|/     \\|"
-];
-    function startTypewriterIntro() {
-        const asciiContainer = document.createElement("pre");
-        asciiContainer.className = "ascii-art";
-        outputHistory.appendChild(asciiContainer);
+    function startIntro() {
+        const promptNameNode = document.createElement("div");
+        promptNameNode.className = "cmd-output";
+        promptNameNode.innerHTML = `<p style="color: #00e5ff; margin-top: 0.5rem;">[SYSTEM INITIALIZED] Please enter your username to log in:</p>`;
+        outputHistory.appendChild(promptNameNode);
+        scrollToBottom();
 
-        let lineIdx = 0;
-
-        function printAsciiLine() {
-            if (lineIdx < asciiLines.length) {
-                asciiContainer.textContent += (lineIdx === 0 ? "" : "\n") + asciiLines[lineIdx];
-                scrollToBottom();
-                lineIdx++;
-                setTimeout(printAsciiLine, 60);
-            } else {
-                const promptNameNode = document.createElement("div");
-                promptNameNode.className = "cmd-output";
-                promptNameNode.innerHTML = `<p style="color: #00e5ff; margin-top: 0.5rem;">[SYSTEM INITIALIZED] Please enter your username to log in:</p>`;
-                outputHistory.appendChild(promptNameNode);
-                scrollToBottom();
-
-                promptUser.innerText = "login";
-                promptLine.classList.remove("hidden");
-                cliInput.focus();
-            }
-        }
-
-        printAsciiLine();
+        promptUser.innerText = "login";
+        promptLine.classList.remove("hidden");
+        cliInput.focus();
     }
 
     const directoryContent = {
