@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="cmd-output">
   <div class="term-card">
     <p class="term-card-title">PROGRAMMING & HARDWARE </p>
-    <p>Building at the intersection of embedded hardware and modern software. Work includes microcontrollers, PCB design, dynamic desktop tools, ML models, Quantum Computing and Ethical Hacking</p>
+    <p>Building at the intersection of hardware and software. Microcontrollers, PCB design, desktop tools, ML models, and Ethical Hacking. You name it.</p>
   </div>
 </div>`,
 
@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
   <table class="term-table">
     <tr><th>DOMAIN</th><th>STACK / TOOLING</th></tr>
     <tr><td>Languages</td><td>Python, C++, SQL, C, HTML, CSS.</td></tr>
-    <tr><td>Hardware</td><td>Microcontrollers, PCB Design, 3D Modelling, Hardware Code</td></tr>
-    <tr><td>ML & Tools</td><td>TensorFlow, Keras, Scikit-Learn, Linux CLI, Git, Bash, Hugging Face</td></tr>
+    <tr><td>Hardware</td><td>Microcontrollers, PCB Design, Logic Design.</td></tr>
+    <tr><td>ML & Tools</td><td>TensorFlow, Keras, Scikit-Learn.</td></tr>
   </table>
 </div>`,
 
